@@ -6,7 +6,6 @@ import thedailyscribbles.model.Comment;
 /**
 *The {@link CommentService} interface provides the services related to the {@link Comment} entity.
 *It declares methods for creating, updating, deleting and finding comments.
-*@author K Naveen
 */
 public interface CommentService {
 	

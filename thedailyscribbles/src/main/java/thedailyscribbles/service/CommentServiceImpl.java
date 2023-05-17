@@ -14,7 +14,6 @@ import thedailyscribbles.repository.CommentRepository;
 
 /**
 *Service class that implements {@link CommentService}.
-*@author K Naveen
 */
 @Service
 public class CommentServiceImpl implements CommentService{

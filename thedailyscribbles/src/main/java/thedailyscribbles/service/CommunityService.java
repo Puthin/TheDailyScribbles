@@ -9,7 +9,6 @@ import thedailyscribbles.model.Community;
 /**
 *The {@link CommunityService} interface provides the services related to the {@link Community} entity.
 *It declares methods for creating, updating, deleting and finding communities.
-*@author Aayush Mangal
 */
 public interface CommunityService {
 	

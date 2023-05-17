@@ -11,7 +11,6 @@ import thedailyscribbles.model.Post;
 
 /**
 *Repository interface for {@link Post} entity.
-*@author Puthin Kumar
 */
 public interface PostRepository extends JpaRepository<Post,Integer>{
 	public List<Post> findAllByTitle(String title);

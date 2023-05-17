@@ -8,7 +8,6 @@ import thedailyscribbles.model.Admin;
 
 /**
 *Repository interface for {@link Admin} entity.
-*@author Puthin Kumar
 */
 
 public interface AdminRepository extends JpaRepository<Admin,Integer>{

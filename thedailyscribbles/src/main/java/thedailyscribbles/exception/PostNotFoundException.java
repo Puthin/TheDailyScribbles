@@ -4,7 +4,6 @@ package thedailyscribbles.exception;
  * This class extends the Exception class and is used to represent an error 
  * condition where the requested Post is not found.
  * 
- * @author Nikhil Sunkad
  */
 
 public class PostNotFoundException extends Exception {

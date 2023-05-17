@@ -15,7 +15,6 @@ import thedailyscribbles.repository.CommunityRepository;
 
 /**
 *Service class that implements {@link CommunityService}.
-*@author Aayush Mangal
 */
 @Service
 public class CommunityServiceImpl implements CommunityService{

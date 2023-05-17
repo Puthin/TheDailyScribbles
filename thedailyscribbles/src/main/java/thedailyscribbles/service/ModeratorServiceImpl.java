@@ -20,7 +20,6 @@ import thedailyscribbles.repository.ModeratorRepository;
 
 /**
 *Service class that implements {@link ModeratorService}.
-*@author K Naveen
 */
 @Service
 public class ModeratorServiceImpl implements ModeratorService {

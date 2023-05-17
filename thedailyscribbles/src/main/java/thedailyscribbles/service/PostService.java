@@ -8,7 +8,7 @@ import thedailyscribbles.model.Post;
 /**
 *The {@link PostService} interface provides the services related to the {@link Post} entity.
 *It declares methods for creating, updating, deleting and finding posts.
-*@author Puthin Kumar
+*@author Puthin Kumar, Xavier David
 */
 public interface PostService {
 	

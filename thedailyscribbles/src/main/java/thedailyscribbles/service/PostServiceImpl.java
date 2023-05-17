@@ -16,7 +16,7 @@ import thedailyscribbles.repository.PostRepository;
 
 /**
 *Service class that implements {@link PostService}.
-*@author Puthin Kumar
+*@author Puthin Kumar, Xavier David
 */
 @Service
 public class PostServiceImpl implements PostService {

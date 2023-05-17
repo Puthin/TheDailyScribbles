@@ -13,7 +13,6 @@ import thedailyscribbles.model.Moderator;
 
 /**
 *The {@link AdminService} interface provides the services related to the {@link Admin} entity.
-*@author Aayush Mangal
 */
 public interface AdminService {
 	

@@ -21,7 +21,6 @@ import thedailyscribbles.repository.AdminRepository;
 
 /**
 *Service class that implements {@link AdminService}.
-*@author Aayush Mangal
 */
 @Service
 public class AdminServiceImpl implements AdminService {

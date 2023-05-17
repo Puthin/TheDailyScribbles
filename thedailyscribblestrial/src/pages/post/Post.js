@@ -17,6 +17,9 @@ import { AuthContext } from "../../context/AuthContext";
 import defaultusericon from "../../assets/images/defaultusericon.avif";
 import { getCommunities } from "../../services/blogger-service";
 import TagChip from "../../components/tagChip/TagChip";
+import { PDFDownloadLink, Document, Page, Text } from "@react-pdf/renderer";
+import ReactDOMServer from "react-dom/server";
+import { saveAs } from "file-saver";
 
 const Post = () => {
   const [fetchedTodayPosts, setFetchedTodayPosts] = useState([]);
@@ -74,6 +77,34 @@ const Post = () => {
     return <Loader />;
   }
 
+  const jsxContent = post.data.replace(/\n/g, "<br />").replace(/<[^>]+>/g, "");
+
+  const MyDocument = () => (
+    <Document>
+      <Page>
+        <Text style={{ fontSize: 20, fontWeight: "bold", marginBottom: 10 }}>
+          {post.title}
+        </Text>
+        <Text>{jsxContent}</Text>
+      </Page>
+    </Document>
+  );
+
+  const DownloadButton = () => (
+    <PDFDownloadLink
+      document={<MyDocument />}
+      fileName="hello.pdf"
+      style={{
+        textDecoration: "none",
+        color: "#0033a0",
+      }}
+    >
+      {({ blob, url, loading, error }) =>
+        loading ? "Loading document..." : "Download PDF"
+      }
+    </PDFDownloadLink>
+  );
+
   return (
     <div className={"postWrapper"}>
       <ModalWindow showModal={showModal} setShowModal={setShowModal} />
@@ -118,6 +149,19 @@ const Post = () => {
               {user?.userId === post.user.userId && (
                 <EditPostButtons postPage={true} post={post} />
               )}
+
+              {/* download buttons */}
+              <button
+                style={{
+                  borderRadius: "5px",
+                  padding: "6px",
+                  height: "50px",
+                  width: "100px",
+                  backgroundColor: "rgba(236, 232, 255, 0.63)",
+                }}
+              >
+                <DownloadButton />
+              </button>
             </div>
 
             <h1>{post.title}</h1>

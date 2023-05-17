@@ -23,7 +23,7 @@ import thedailyscribbles.utils.Constants;
 
 /**
 *Service class that implements {@link BloggerService}.
-*@author Puthin Kumar
+*@author Puthin Kumar, Xavier David
 */
 @Service
 public class BloggerServiceImpl implements BloggerService{

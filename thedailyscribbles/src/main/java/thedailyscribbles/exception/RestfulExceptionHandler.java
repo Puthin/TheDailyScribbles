@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 /**
  * This class is used to handle exceptions for RESTful APIs in a centralized manner.
  * 
- * @author Nikhil Sunkad
  * 
  */
 

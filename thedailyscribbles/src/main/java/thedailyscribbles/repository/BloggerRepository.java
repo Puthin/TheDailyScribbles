@@ -10,7 +10,6 @@ import thedailyscribbles.model.Blogger;
 
 /**
 *Repository interface for {@link Blogger} entity.
-*@author Puthin Kumar
 */
 
 public interface BloggerRepository extends JpaRepository<Blogger,Integer>{

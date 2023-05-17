@@ -4,7 +4,6 @@ package thedailyscribbles.exception;
  * This class extends the Exception class and is used to represent an error 
  * condition where the requested Comment is not found.
  * 
- * @author Nikhil Sunkad
  */
 
 public class CommentNotFoundException extends Exception {

@@ -15,7 +15,7 @@ import thedailyscribbles.model.Post;
 /**
 *The {@link BloggerService} interface provides the services related to the {@link Blogger} entity.
 *It declares methods for creating, updating, deleting and finding bloggers.
-*@author Puthin Kumar
+*@author Puthin Kumar, Xavier David
 */
 public interface BloggerService {
 	
