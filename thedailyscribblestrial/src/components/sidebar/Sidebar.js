@@ -82,7 +82,7 @@ const Sidebar = ({ homePage }) => {
           </li>
           <li onClick={() => handleClick("create")}>
             <CreateIcon className={"sidebarIcon"} />
-            <span>Make Post</span>
+            <span>Write Book</span>
           </li>
           <Link to={"about"} className={"link"}>
             <li>
